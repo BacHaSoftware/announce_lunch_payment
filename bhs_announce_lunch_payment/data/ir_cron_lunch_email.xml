@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="ir_cron_lunch_email" model="ir.cron" forcecreate="True">
+            <field name="name">Lunch: Cron Send Email Announce Payment</field>
+            <field name="model_id" ref="lunch.model_lunch_order"/>
+            <field name="state">code</field>
+            <field name="code">model.send_email_announce_lunch_payment()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">months</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" eval="(DateTime.now().replace(day=1, hour=1, minute=0, second=0) + relativedelta(months=1)).strftime('%Y-%m-%d %H:%M:%S')"/>
+            <field name="active" eval="True"/>
+        </record>
+    </data>
+</odoo>

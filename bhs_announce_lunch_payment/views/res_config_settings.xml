@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.lunch</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="90"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='lunch_notification_setting_container']" position="after">
+                <block title="Bank Settings" name="bank_company">
+                    <div class="o_setting_box o_form_field">
+                        <div class="o_setting_box_body">
+                            <div class="row mt16">
+                                <div class="col-6">
+<!--                                    <div class="form-group">-->
+                                    <setting id="bank_code" string="Bank Code" documentation="https://vietqr.io/.html"  class="col-10 col-lg-10">
+                                        <field name="bank_code" class="o_field_char"/>
+                                    </setting>
+
+                                    <setting id="account_number" string="Account Number"  class="col-10 col-lg-10">
+                                        <field name="account_number" class="o_field_char"/>
+                                    </setting>
+
+                                </div>
+
+
+                                <div class="col-6">
+                                    <setting id="print_format" string="Print Format"  class="col-10 col-lg-10">
+                                        <field name="print_format" class="o_field_selection"/>
+                                    </setting>
+
+                                    <setting id="account_name" string="Account Name"  class="col-12 col-lg-12">
+                                        <field name="account_name" class="o_field_char"/>
+                                    </setting>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>
