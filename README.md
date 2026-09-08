@@ -8,7 +8,7 @@
     <img src="/bhs_announce_lunch_payment/static/description/icon.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Announce Lunch Payment</h3>
+  <h3 align="center">Lunch Payment Manager</h3>
 
   <p align="center">
     Manage and announce your monthly lunch payments effortlessly. Keep track of all orders and ensure timely payments.
