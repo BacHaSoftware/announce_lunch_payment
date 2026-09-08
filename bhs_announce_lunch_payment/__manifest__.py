@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 {
-    'name': "Announce Lunch Payment",
+    'name': "Lunch Payment Manager",
     'version': '1.0',
     'summary': 'Announce Lunch Payment',
     'category': 'Human Resources/Lunch',
